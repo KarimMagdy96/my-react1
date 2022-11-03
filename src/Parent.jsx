@@ -5,14 +5,14 @@ export default class Parent extends Component {
   state = {
     prodacts: [
       { id: 1, name: "toshiba", price: 2500, count: 1, sale: false },
-      { id: 1, name: "apple", price: 25700, count: 5, sale: false },
-      { id: 1, name: "samsung", price: 1700, count: 3, sale: true },
-      { id: 1, name: "nasr", price: 1200, count: 8, sale: false },
-      { id: 1, name: "valvu", price: 3000, count: 9, sale: true },
+      { id: 2, name: "apple", price: 25700, count: 5, sale: false },
+      { id: 3, name: "samsung", price: 1700, count: 3, sale: true },
+      { id: 4, name: "nasr", price: 1200, count: 8, sale: false },
+      { id: 5, name: "valvu", price: 3000, count: 9, sale: true },
     ],
   };
-  deleteprodacts(){
-    console.log('hello')
+  deleteprodacts(id){
+    console.log(id)
   }
   render() {
     return (
