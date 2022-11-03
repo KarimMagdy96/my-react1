@@ -11,8 +11,15 @@ export default class Parent extends Component {
       { id: 5, name: "valvu", price: 3000, count: 9, sale: true },
     ],
   };
-  deleteprodacts(id){
+  deleteprodacts= (id) =>{
     console.log(id)
+    //deep copy
+let newProdacts = [...this.state.prodacts];
+console.log(newProdacts)
+    //action
+    newProdacts= newProdacts.filter((prodact)=> prodact.id !== id)
+    //setstate
+    this.setState({prodacts:newProdacts})
   }
   render() {
     return (
